@@ -10,7 +10,9 @@ class Heading extends Component {
       <div>
             <NavLink to="/"><h1 className="backbutton"><FaChevronLeft /></h1></NavLink>
             <h1>Eden</h1>
-            <p className="p-app">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat est orci, et sodales mi ultricies sagittis. Curabitur non vehicula tellus, id fermentum quam. </p>
+            <Container>
+              <p className="p-app">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat est orci, et sodales mi ultricies sagittis. Curabitur non vehicula tellus, id fermentum quam. </p>
+            </Container>
       </div>
     )
   }
