@@ -14,21 +14,13 @@ class BoardGame extends Component {
     return (
       <div className="App">
         <Heading />
-        <Container>
+        <Container id="gameCanvas">
           <Row>
             <Col sm="12">
               <div className="boardgame">
-              
-                  <Popover
-                    class="popo"
-                    id="popover-basic"
-                    placement="top"
-                    // title="Popover bottom"
-                  >
+                  <Popover placement="top">
                     {this.props.popUpContent[this.props.day].question}
                   </Popover>
-               
-                ;
                 <img src={background} className="img-fluid" alt="" />
                 <div className="menu-choice">
                   <ButtonQuestions />
