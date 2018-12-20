@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col} from 'reactstrap';
 
-
 class Heading extends Component {
   render() {
     return (

@@ -1,8 +1,8 @@
 .boardgame {
     background-image:url('../Images/background2.png');
     background-size:100%;
-    display:block;
-    width:60vh;
+    width:auto;
     height:100vh;
     margin:auto;
+    background-repeat: no-repeat;
 }
