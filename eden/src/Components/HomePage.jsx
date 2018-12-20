@@ -7,7 +7,7 @@ class HomePage extends Component {
     render() {
         return (
             <div>
-                <Heading />
+
                 <h1>Veux tu sauver la planète ?</h1>
                 <ButtonYesNo />
             </div>
