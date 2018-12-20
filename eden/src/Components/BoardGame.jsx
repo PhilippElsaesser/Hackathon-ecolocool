@@ -3,6 +3,7 @@ import background from '../Assets/Images/background.png'
 import { Container, Row, Col } from 'reactstrap';
 import '../Assets/Style/boardGame.css';
 import ButtonQuestions from '../Container/ButtonQuestions';
+import NextDay from '../Actions/Actions';
 
 class BoardGame extends Component {
   render() {
@@ -22,9 +23,11 @@ class BoardGame extends Component {
             </Col>
           </Row>
         </Container>
+        <NextDay />
       </div>
     );
   }
+
 }
 
 export default BoardGame;
