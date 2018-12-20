@@ -7,8 +7,7 @@ class HomePage extends Component {
     render() {
         return (
             <div>
-
-                <h1>Veux tu sauver la planète ?</h1>
+                <h1>Es-tu prêt à sauver la planète ?</h1>
                 <ButtonYesNo />
             </div>
         );

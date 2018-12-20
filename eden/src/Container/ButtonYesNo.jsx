@@ -5,8 +5,7 @@ class ButtonYesNo extends Component {
     render() {
         return (
             <div>
-                <NavLink to="/boardgame"><button>OUI</button></NavLink>
-                <NavLink to="/" ><button>NON</button></NavLink>
+                <NavLink to="/boardgame"><button>Oui</button></NavLink>
             </div>
         );
     }
