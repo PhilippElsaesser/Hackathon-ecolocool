@@ -16,17 +16,9 @@ class BoardGame extends Component {
           <Row>
             <Col sm="12">
               <div className="boardgame">
-              
-                  <Popover
-                    class="popo"
-                    id="popover-basic"
-                    placement="top"
-                    // title="Popover bottom"
-                  >
+                  <Popover placement="top">
                     As-tu envoyé un fichier par internet à une personne présente dans la même salle que toi cette semaine ?
                   </Popover>
-               
-                ;
                 <img src={background} className="img-fluid" alt="" />
                 <div className="menu-choice">
                   <ButtonQuestions />
