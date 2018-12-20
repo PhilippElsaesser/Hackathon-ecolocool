@@ -26,7 +26,7 @@ h1 {
 
 /* pas touche, modifs des paragraphes */
 .p-app {
-    font-size:0.9em;
+    font-size:1.5em;
     line-height: 1.1em;
     padding-left:5%;
     padding-right:5%;
@@ -40,4 +40,10 @@ h1 {
     top:13vh;
     left: 13vw;
     font-size: 1.2rem;
+}
+
+#gameCanvas {
+    max-width: 550px;
+    filter: drop-shadow(0 0 0.75rem black);
+    padding:20px;
 }

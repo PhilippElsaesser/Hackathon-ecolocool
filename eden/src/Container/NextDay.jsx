@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { bindActionCreators } from 'redux'
-import {nextDay} from '../Actions/Actions'
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import {nextDay} from '../Actions/Actions';
+import { Button } from 'reactstrap';
 
 class NextDay extends Component {
     render() {
         return (
             <div>
-                <button onClick={this.props.nextDay}>JOUR SUIVANT</button>
+                <Button onClick={this.props.nextDay}>JOUR SUIVANT</Button>
             </div>
         );
     }

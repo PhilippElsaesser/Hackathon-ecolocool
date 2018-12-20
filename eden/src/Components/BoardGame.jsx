@@ -12,7 +12,7 @@ class BoardGame extends Component {
     return (
       <div className="App">
         <Heading />
-        <Container>
+        <Container id="gameCanvas">
           <Row>
             <Col sm="12">
               <div className="boardgame">
