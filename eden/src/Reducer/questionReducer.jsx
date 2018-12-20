@@ -1,5 +1,5 @@
-export default () => {
-  return [
+const initialState = {
+  popUpContent: [
     {
       id: 1,
       question: 'As-tu utlisé un autre moteur de recherche que Google cette semaine ?',
@@ -15,7 +15,7 @@ export default () => {
     {
       id: 3,
       question: 'As-tu nettoyé ta boîte mail récemment ?',
-      answer: 'oui', 
+      answer: 'oui',
       trivia: "Le savais-tu ? Une entreprise de 100 personnes génère chaque année rien qu’avec son courrier électronique 13,6 tonnes d’équivalent CO2, soit l’équivalent de 14 allers-retours Paris et New York.(ADEME). Le nombre de mails envoyés par jour en France s'élève à 1,4 milliard (hors spam). Dans le monde ? 281 milliards (hors spam) ! Pour nettoyer ta boîte mail tu peux utiliser des outils comme <a href=\"Cleanfox.io\" target=\"blank\">Cleanfox.io</a> !"
     },
     {
@@ -33,7 +33,7 @@ export default () => {
     {
       id: 6,
       question: 'As-tu regardé une vidéo via un service de Streaming cette semaine ?',
-      answer: 'non', 
+      answer: 'non',
       trivia: "Le savais-tu ? Le streaming représente aujourd'hui 82% du traffic Internet. Il est le principal facteur d'inflation énergétique ! L'empreinte écologique d'une vidéo sera moins élevée en téléchargement plutôt qu'en streaming."
     },
     {
@@ -43,4 +43,10 @@ export default () => {
       trivia: "Le savais-tu ? Les français passent 1h30 par jour sur internet via leur smartphone... Les moins de 25 ans 2h30 ! Certains outils comme <a href=\"https://inthemoment.io\">Moment</a> ou <a href=\"https://offtime.es/\">Offtime</a> permettant de mesurer le temps passé sur ton téléphone ainsi qu'un aperçu du temps par application. En diminuant le temps passé sur ton smartphone, tu diminueras ton empreinte énergétique !"
     },
   ]
-};
+}
+
+export function questionReducer(state = initialState, action) {
+  return state
+}
+
+export default questionReducer

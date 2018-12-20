@@ -4,7 +4,7 @@ import dayReducer from './dayReducer';
 
 
 const allReducers = combineReducers({
-  question: questionReducer,
+  questionReducer: questionReducer,
   dayReducer: dayReducer,
 });
 

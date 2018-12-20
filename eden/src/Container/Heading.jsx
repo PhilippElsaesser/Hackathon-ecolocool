@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux'
 import { Container, Row, Col } from 'reactstrap';
 import { FaChevronLeft } from 'react-icons/fa';
 import { NavLink, Link } from 'react-router-dom';
 import '../Assets/Style/Heading.css'
+import { nextDay, resetDay } from '../Actions/Actions'
 
 class Heading extends Component {
   render() {
@@ -11,11 +13,25 @@ class Heading extends Component {
             <NavLink to="/"><h1 className="backbutton"><FaChevronLeft /></h1></NavLink>
             <h1>Eden</h1>
             <Container>
-              <p className="p-app">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat est orci, et sodales mi ultricies sagittis. Curabitur non vehicula tellus, id fermentum quam. </p>
+              <p className="p-app">{this.props.popUpContent[this.props.day].trivia}</p>
             </Container>
       </div>
     )
   }
 }
 
-export default Heading;
+const mapDispatchToProps = dispatch => {
+  return {
+
+  }
+}
+
+const mapStateToProps = state => ({
+  popUpContent: state.questionReducer.popUpContent,
+  day: state.dayReducer.day,
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Heading);

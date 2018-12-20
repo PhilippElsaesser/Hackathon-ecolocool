@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
 
 class ButtonYesNo extends Component {
     render() {
@@ -11,4 +13,21 @@ class ButtonYesNo extends Component {
     }
 }
 
-export default ButtonYesNo;
+const mapDispatchToProps = dispatch => {
+    return {
+
+    }
+}
+
+const mapStateToProps = state => ({
+
+})
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(ButtonYesNo);
+
+
+
+
