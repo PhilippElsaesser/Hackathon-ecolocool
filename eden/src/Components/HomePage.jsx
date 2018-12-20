@@ -8,7 +8,7 @@ class HomePage extends Component {
             <div>
                 <Heading />
                 <h1>Veux tu sauver la planète ?</h1>
-                <NavLink to="/BoardGame"><button>OUI</button></NavLink>
+                <NavLink to="/boardgame"><button>OUI</button></NavLink>
                 <NavLink to="/" ><button>NON</button></NavLink>
             </div>
         );
