@@ -9,8 +9,8 @@ class Heading extends Component {
     return (
       <div>
         <Row>
-          <NavLink to="/"><h1 className="backbutton"><FaChevronLeft /></h1></NavLink>
-          <Col sm="12">
+        <Col sm="12">
+            <NavLink to="/"><h1 className="backbutton"><FaChevronLeft /></h1></NavLink>
             <h1>Eden</h1>
             <p className="p-app">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean placerat est orci, et sodales mi ultricies sagittis. Curabitur non vehicula tellus, id fermentum quam. </p>
           </Col>
