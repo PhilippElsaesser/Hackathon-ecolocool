@@ -9,6 +9,11 @@ export function dayReducer(state = initialState, action) {
                 ...state,
                 day: state.day + 1
             }
+        case "RESET_DAY":
+            return {
+                ...state,
+                day: 1
+            }
         default:
             return state
     }

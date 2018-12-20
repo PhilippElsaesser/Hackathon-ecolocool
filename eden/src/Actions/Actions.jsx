@@ -2,4 +2,8 @@ const nextDay = () => ({
     type: 'NEXT_DAY'
 });
 
-export {nextDay};
+const resetDay = () => ({
+    type: 'RESET_DAY'
+})
+
+export { nextDay, resetDay };
