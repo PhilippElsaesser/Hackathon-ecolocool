@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import {BrowserRouter,Switch,Route} from 'react-router-dom'
-import BoardGame from './Components/BoardGame'
-import HomePage from './Components/HomePage'
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import BoardGame from './Components/BoardGame';
+import HomePage from './Components/HomePage';
 
 class App extends Component {
   render() {
