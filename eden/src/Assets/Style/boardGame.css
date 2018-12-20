@@ -1,0 +1,43 @@
+.boardgame {
+    height:auto;
+    width:100%;
+}
+
+.boardgame img {
+    width:100%;
+}
+
+.menu-choice {
+    width:100%;
+    display:block;
+    background-color: rgb(94, 134, 221);
+    padding:4%;
+    margin:auto;
+}
+
+h1 {
+    font-size:3em;
+    color:rgb(94, 134, 221);
+    font-family: 'Lobster Two', cursive;
+    font-weight:900;
+    text-shadow: 2px 2px 0px rgb(242, 244, 248);
+    padding-top:10%;
+}
+
+/* pas touche, modifs des paragraphes */
+.p-app {
+    font-size:0.9em;
+    line-height: 1.1em;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.button-questions {
+    margin:2%;
+}
+.popover {
+    position: absolute;
+    top:13vh;
+    left: 13vw;
+    font-size: 1.2rem;
+}
