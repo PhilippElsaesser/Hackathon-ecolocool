@@ -7,6 +7,7 @@ import '../Assets/Style/boardGame.css';
 import ButtonQuestions from '../Container/ButtonQuestions';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
+import { Popover } from "react-bootstrap";
 
 class BoardGame extends Component {
   render() {
@@ -15,8 +16,19 @@ class BoardGame extends Component {
         <Heading />
         <Container>
           <Row>
-            <Col sm='12'>
+            <Col sm="12">
               <div className="boardgame">
+              
+                  <Popover
+                    class="popo"
+                    id="popover-basic"
+                    placement="top"
+                    // title="Popover bottom"
+                  >
+                    {this.props.popUpContent[this.props.day].question}
+                  </Popover>
+               
+                ;
                 <img src={background} className="img-fluid" alt="" />
                 <div className="menu-choice">
                   <ButtonQuestions />

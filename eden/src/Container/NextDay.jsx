@@ -8,7 +8,7 @@ class NextDay extends Component {
         console.log(this.props.day)
         return (
             <div>
-                {(this.props.day < this.props.popUpContent.length)
+                {(this.props.day < this.props.popUpContent.length-1)
                     ? <div><button onClick={this.props.nextDay}>JOUR SUIVANT</button></div> : null}
             </div>
         );

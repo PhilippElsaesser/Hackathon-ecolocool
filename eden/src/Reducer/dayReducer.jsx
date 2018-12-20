@@ -1,5 +1,5 @@
 const initialState = {
-    day: 1
+    day: 0
 }
 
 export function dayReducer(state = initialState, action) {

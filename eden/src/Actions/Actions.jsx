@@ -6,4 +6,16 @@ const resetDay = () => ({
     type: 'RESET_DAY'
 })
 
-export { nextDay, resetDay };
+const incrementPaysage = () => ({
+    type: 'INCREMENT_PAYSAGE'
+})
+
+const incrementFleur = () => ({
+    type: 'INCREMENT_FLEUR'
+})
+
+const decrementFleur = () => ({
+    type: 'DECREMENT_FLEUR'
+})
+
+export { nextDay, resetDay, incrementPaysage, incrementFleur, decrementFleur };
