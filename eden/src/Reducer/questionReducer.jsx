@@ -16,7 +16,7 @@ export default () => {
       id: 3,
       question: 'As-tu nettoyé ta boîte mail récemment ?',
       answer: 'oui', 
-      trivia: "Le savais-tu ? Une entreprise de 100 personnes génère chaque année rien qu’avec son courrier électronique 13,6 tonnes d’équivalent CO2, soit l’équivalent de 14 allers-retours Paris et New York.(ADEME). Le nombre de mails envoyés par jour en France s'élève à 1,4 milliard (hors spam). Dans le monde ? 281 milliards (hors spam) ! Pour nettoyer ta boîte mail tu peux utiliser des outils comme <a href="Cleanfox.io" target="blank">Cleanfox.io</a> !"
+      trivia: "Le savais-tu ? Une entreprise de 100 personnes génère chaque année rien qu’avec son courrier électronique 13,6 tonnes d’équivalent CO2, soit l’équivalent de 14 allers-retours Paris et New York.(ADEME). Le nombre de mails envoyés par jour en France s'élève à 1,4 milliard (hors spam). Dans le monde ? 281 milliards (hors spam) ! Pour nettoyer ta boîte mail tu peux utiliser des outils comme <a href=\"Cleanfox.io\" target=\"blank\">Cleanfox.io</a> !"
     },
     {
       id: 4,
