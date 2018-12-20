@@ -19,8 +19,6 @@ class BoardGame extends Component {
             <Col sm="12">
               <div className="boardgame">
                   <Popover placement="top">
-                    As-tu envoyé un fichier par internet à une personne présente dans la même salle que toi cette semaine ?
-
                     {this.props.popUpContent[this.props.day].question}
                   </Popover>
                 <img src={background} className="img-fluid" alt="" />
