@@ -17,6 +17,14 @@ import arbre4 from '../Assets/Images/paysage4.png';
 import arbre5 from '../Assets/Images/paysage5.png';
 import arbre6 from '../Assets/Images/paysage6.png';
 import arbre7 from '../Assets/Images/paysage7.png';
+import fleur7 from '../Assets/Images/day1.png';
+import fleur6 from '../Assets/Images/day2.png';
+import fleur5 from '../Assets/Images/day3.png';
+import fleur4 from '../Assets/Images/day4.png';
+import fleur3 from '../Assets/Images/day5.png';
+import fleur2 from '../Assets/Images/day6.png';
+import fleur1 from '../Assets/Images/day7.png';
+import fleur0 from '../Assets/Images/day8.png';
 
 
 class BoardGame extends Component {
@@ -55,6 +63,46 @@ class BoardGame extends Component {
       return <span className="animated bounceInRight paysage "><img src={arbre7} className="bite img-fluid" alt=""/></span>
     }
   }
+  displayFleur7=()=>{
+    if(this.props.fleurCounter===7){
+      return <span className="paysage"><img src={fleur7} className="arbre img-fluid" alt=""/></span>
+    }
+  }
+  displayFleur6=()=>{
+    if(this.props.fleurCounter===6){
+      return <span className="animated jello paysage "><img src={fleur6} className="arbre img-fluid" alt=""/></span>
+    }
+  }
+  displayFleur5=()=>{
+    if(this.props.fleurCounter===5){
+      return <span className="animated jello paysage "><img src={fleur5} className="arbre img-fluid" alt=""/></span>
+    }
+  }
+  displayFleur4=()=>{
+    if(this.props.fleurCounter===4){
+      return <span className="animated jello paysage"><img src={fleur4} className="arbre img-fluid" alt=""/></span>
+    }
+  }
+  displayFleur3=()=>{
+    if(this.props.fleurCounter===3){
+      return <span className="animated jello paysage"><img src={fleur3} className="arbre img-fluid" alt=""/></span>
+    }
+  }
+  displayFleur2=()=>{
+    if(this.props.fleurCounter===2){
+      return <span className="animated jello paysage"><img src={fleur2} className="arbre img-fluid" alt=""/></span>
+    }
+  }
+  displayFleur1=()=>{
+    if(this.props.fleurCounter===1){
+      return <span className="animated jello paysage"><img src={fleur1} className="arbre img-fluid" alt=""/></span>
+    }
+  }
+  displayFleur0=()=>{
+    if(this.props.fleurCounter===0){
+      return <span className="animated fadeInDown paysage"><img src={fleur0} className="arbre img-fluid" alt=""/></span>
+    }
+  }
 
   
   render() {
@@ -64,11 +112,10 @@ class BoardGame extends Component {
         <Container id="gameCanvas">
           <Row>
             <Col sm="12">
-              <h2 id="pointsDeVie">{this.props.fleurCounter + "PV"}</h2>
               <div className="boardgame text-center">
                 {this.props.open ? <Popover placement="top" id="popover-basic">
                   {this.props.popUpContent[this.props.day].question}
-                </Popover> : null };
+                </Popover> : null }
                 <div className="paysageContainer">
                   <img id="board" src={background} className="img-fluid" alt="" />
                   <img id="character" src={character} className="paysage img-fluid" alt=""/>
@@ -79,6 +126,14 @@ class BoardGame extends Component {
                   {this.displayPaysage5()}
                   {this.displayPaysage6()}
                   {this.displayPaysage7()}
+                  {this.displayFleur0()}
+                  {this.displayFleur1()}
+                  {this.displayFleur2()}
+                  {this.displayFleur3()}
+                  {this.displayFleur4()}
+                  {this.displayFleur5()}
+                  {this.displayFleur6()}
+                  {this.displayFleur7()}
                 </div>
                 <div className="menu-choice">
                   {this.props.open ? (<ButtonQuestions />) : null}
