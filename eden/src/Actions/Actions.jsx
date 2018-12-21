@@ -18,4 +18,12 @@ const decrementFleur = () => ({
     type: 'DECREMENT_FLEUR'
 })
 
-export { nextDay, resetDay, incrementPaysage, incrementFleur, decrementFleur };
+const isOpen = () => ({
+    type: 'IS_OPEN'
+})
+
+const isClosed = () => ({
+    type: 'IS_CLOSED'
+})
+
+export { nextDay, resetDay, incrementPaysage, incrementFleur, decrementFleur, isOpen, isClosed };
