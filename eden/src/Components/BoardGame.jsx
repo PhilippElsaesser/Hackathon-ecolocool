@@ -68,7 +68,7 @@ class BoardGame extends Component {
               <div className="boardgame text-center">
                 {this.props.open ? <Popover placement="top" id="popover-basic">
                   {this.props.popUpContent[this.props.day].question}
-                </Popover> : null };
+                </Popover> : null }
                 <div className="paysageContainer">
                   <img id="board" src={background} className="img-fluid" alt="" />
                   <img id="character" src={character} className="paysage img-fluid" alt=""/>

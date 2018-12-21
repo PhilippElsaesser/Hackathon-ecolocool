@@ -1,8 +1,7 @@
-h1 {
-    padding: 20px !important;
-}
-
 .backbutton {
     position: absolute;
     color: #5589D8;
+    width:100px;
+    font-size:3em;
+    margin-left:-5%;
 }

@@ -14,7 +14,7 @@
 }
 
 #board{
-    filter: drop-shadow(0 0 0.75rem black);
+    border: 5px solid rgb(216, 215, 215);
 }
 
 .paysageContainer {
@@ -53,15 +53,16 @@ h1 {
     font-family: 'Lobster Two', cursive;
     font-weight:900;
     text-shadow: 2px 2px 0px rgb(242, 244, 248);
-    padding-top:10%;
+    padding-top:2%;
 }
 
 /* pas touche, modifs des paragraphes */
 .p-app {
-    font-size:1.5em;
+    font-size:1.8em;
     line-height: 1.1em;
-    padding-left:5%;
-    padding-right:5%;
+    padding:5%;
+    background-color:rgb(230, 231, 233);
+    text-align:justify;
 }
 
 .button-questions {
@@ -70,15 +71,12 @@ h1 {
 
 /* bouton next day */
 .next-day {
-    font-size:0.7em;
-    margin:1%;
-}
-
-.next-day button {
-    background-color:rgb(199, 199, 199);
-    border:none;
-    color:rgb(94, 85, 85);
-    margin:2vw;
+    font-size:1.3em;
+    font-weight:700;
+    background-color: rgb(99, 160, 97);
+    margin:auto;
+    padding:5px;
+    margin-bottom:1%;
 }
 
 /* 
