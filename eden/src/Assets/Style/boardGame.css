@@ -9,9 +9,23 @@
 
 #gameCanvas {
     max-width: 550px;
-    filter: drop-shadow(0 0 0.75rem black);
     padding:10px;
+    z-index:0;
 }
+
+#board{
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.paysageContainer {
+    position: relative;
+}
+
+.paysage {
+    position: absolute;
+    left:0;
+}
+
 
 #triviaContainer {
     max-width: 550px;
@@ -26,6 +40,7 @@
 
 .menu-choice button {
     width: 100px;
+    z-index: 10000;
 }
 
 .menu-choice button:hover {
@@ -68,4 +83,5 @@ h1 {
     /* background-color:rgba(0, 0, 0, 0.5); */
     padding: 10px;
     border-radius: 10px;
+    z-index: 10000;
 }
