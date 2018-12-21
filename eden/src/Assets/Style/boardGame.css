@@ -16,14 +16,13 @@
 .menu-choice {
     width:100%;
     display:block;
-    /* background-color: rgb(94, 134, 221); */
     padding:4%;
     margin:auto;
     box-shadow: 
 }
 
 .menu-choice button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.24), 0 3px 5px 0 rgba(0,0,0,0.19);
 }
 
 h1 {
@@ -44,7 +43,7 @@ h1 {
 }
 
 .button-questions {
-    margin:2%;
+    margin:2vw;
 }
 
 /* 
@@ -62,36 +61,4 @@ h1 {
     /* background-color:rgba(0, 0, 0, 0.5); */
     padding: 10px;
     border-radius: 10px;
-}
-
-
-/* 
-===================================
-           CUSTOM CSS BUBBLE
-=================================== */
-
-.bubble {
-position: absolute;
-left: 25%;
-top: 15%;
-width:50vw;
-max-width: 266px;
-padding: 20px;
-background: #FFFFFF;
--webkit-border-radius: 10px;
--moz-border-radius: 10px;
-border-radius: 10px;
-}
-
-.bubble:after {
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 28px 18px 0;
-border-color: #FFFFFF transparent;
-display: block;
-width: 0;
-z-index: 1;
-bottom: -28px;
-left: 64px;
 }

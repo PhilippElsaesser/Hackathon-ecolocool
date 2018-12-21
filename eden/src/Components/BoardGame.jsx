@@ -19,10 +19,9 @@ class BoardGame extends Component {
           <Row>
             <Col sm="12">
               <div className="boardgame text-center">
-                {/* <blockquote className="bubble"><h3>{this.props.popUpContent[this.props.day].question}</h3></blockquote> */}
-                <Popover placement="top" id="question">
+                {this.props.open ? <Popover placement="top" id="popover-basic">
                   {this.props.popUpContent[this.props.day].question}
-                </Popover>
+                </Popover> : null };
                 <img src={background} className="img-fluid" alt="" />
               </div>
             </Col>
@@ -53,4 +52,3 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(BoardGame);
-
