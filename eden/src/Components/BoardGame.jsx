@@ -8,6 +8,7 @@ import ButtonQuestions from '../Container/ButtonQuestions';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { Popover } from "react-bootstrap";
+import { isOpen } from '../Actions/Actions'
 
 class BoardGame extends Component {
   render() {
@@ -38,13 +39,14 @@ class BoardGame extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-
+    isOpen: bindActionCreators(isOpen, dispatch),
   }
 }
 
 const mapStateToProps = state => ({
   popUpContent: state.questionReducer.popUpContent,
   day: state.dayReducer.day,
+  open: state.popUpReducer.open
 })
 
 export default connect(
