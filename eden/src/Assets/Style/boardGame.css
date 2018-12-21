@@ -7,6 +7,12 @@
     width:100%;
 }
 
+#gameCanvas {
+    max-width: 550px;
+    filter: drop-shadow(0 0 0.75rem black);
+    padding:10px;
+}
+
 .menu-choice {
     width:100%;
     display:block;
@@ -21,7 +27,7 @@
 }
 
 h1 {
-    font-size:3em;
+    font-size:5em;
     color:rgb(94, 134, 221);
     font-family: 'Lobster Two', cursive;
     font-weight:900;
@@ -40,35 +46,30 @@ h1 {
 .button-questions {
     margin:2%;
 }
-.popover {
-    position: absolute;
-    top:45px;
-    left: 100px;
-    font-size: 1.2rem;
-    padding: 5px;
-    font-size: 2em;
-}
 
-#gameCanvas {
-    max-width: 550px;
-    filter: drop-shadow(0 0 0.75rem black);
-    padding:10px;
-}
-
-#question {
-    position: absolute;
-    left: 25%;
-    top: 5%;
-    background-color:rgba(0, 0, 0, 0.15);
-    padding: 10px;
-    border-radius: 10px;
-    width:50vw;
-    max-width: 266px;
-}
 /* 
 ===================================
-        BUBBLE CSS
+           BUBBLE / POPOVER
 =================================== */
+.popover {
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    font-size: 1.5em;
+    width:75vw;
+    max-width: 400px;
+    font-weight: bold;
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* 
+===================================
+           CUSTOM CSS BUBBLE
+=================================== */
+
 .bubble {
 position: absolute;
 left: 25%;
