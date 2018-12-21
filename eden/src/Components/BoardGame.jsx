@@ -30,77 +30,77 @@ import fleur0 from '../Assets/Images/day8.png';
 class BoardGame extends Component {
   displayPaysage1=()=>{
     if(this.props.paysageCounter>=1){
-      return <span className="animated bounceInLeft paysage"><img src={arbre1} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated bounceInRight paysage"><img src={arbre1} className="arbre img-fluid" alt=""/></span>
     }
   }
   displayPaysage2=()=>{
     if(this.props.paysageCounter>=2){
-      return <span className="animated fadeInLeft paysage "><img src={arbre2} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated fadeInRight paysage "><img src={arbre2} className="arbre img-fluid" alt=""/></span>
     }
   }
   displayPaysage3=()=>{
     if(this.props.paysageCounter>=3){
-      return <span className="animated bounceInDown paysage "><img src={arbre3} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated bounceInRight paysage "><img src={arbre3} className="arbre img-fluid" alt=""/></span>
     }
   }
   displayPaysage4=()=>{
     if(this.props.paysageCounter>=4){
-      return <span className="animated bounceInRight paysage"><img src={arbre4} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated bounceInLeft paysage"><img src={arbre4} className="arbre img-fluid" alt=""/></span>
     }
   }
   displayPaysage5=()=>{
     if(this.props.paysageCounter>=5){
-      return <span className="animated bounceInRight paysage "><img src={arbre5} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated bounceInLeft paysage "><img src={arbre5} className="arbre img-fluid" alt=""/></span>
     }
   }
   displayPaysage6=()=>{
     if(this.props.paysageCounter>=6){
-      return <span className="animated bounceInDown paysage "><img src={arbre6} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated bounceInLeft paysage "><img src={arbre6} className="arbre img-fluid" alt=""/></span>
     }
   }
   displayPaysage7=()=>{
     if(this.props.paysageCounter>=7){
-      return <span className="animated bounceInRight paysage "><img src={arbre7} className="bite img-fluid" alt=""/></span>
+      return <span className="animated bounceInRight paysage giletjaune"><img src={arbre7} className="img-fluid" alt=""/></span>
     }
   }
   displayFleur7=()=>{
     if(this.props.fleurCounter===7){
-      return <span className="paysage"><img src={fleur7} className="arbre img-fluid" alt=""/></span>
+      return <span className="paysage fleur"><img src={fleur7} className="img-fluid" alt=""/></span>
     }
   }
   displayFleur6=()=>{
     if(this.props.fleurCounter===6){
-      return <span className="animated jello paysage "><img src={fleur6} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated jello paysage fleur"><img src={fleur6} className="img-fluid" alt=""/></span>
     }
   }
   displayFleur5=()=>{
     if(this.props.fleurCounter===5){
-      return <span className="animated jello paysage "><img src={fleur5} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated jello paysage fleur"><img src={fleur5} className="img-fluid" alt=""/></span>
     }
   }
   displayFleur4=()=>{
     if(this.props.fleurCounter===4){
-      return <span className="animated jello paysage"><img src={fleur4} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated jello paysage fleur"><img src={fleur4} className="img-fluid" alt=""/></span>
     }
   }
   displayFleur3=()=>{
     if(this.props.fleurCounter===3){
-      return <span className="animated jello paysage"><img src={fleur3} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated jello paysage fleur"><img src={fleur3} className="img-fluid" alt=""/></span>
     }
   }
   displayFleur2=()=>{
     if(this.props.fleurCounter===2){
-      return <span className="animated jello paysage"><img src={fleur2} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated jello paysage fleur"><img src={fleur2} className="img-fluid" alt=""/></span>
     }
   }
   displayFleur1=()=>{
     if(this.props.fleurCounter===1){
-      return <span className="animated jello paysage"><img src={fleur1} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated jello paysage fleur"><img src={fleur1} className="img-fluid" alt=""/></span>
     }
   }
   displayFleur0=()=>{
     if(this.props.fleurCounter===0){
-      return <span className="animated fadeInDown paysage"><img src={fleur0} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated fadeInDown paysage fleur"><img src={fleur0} className="img-fluid" alt=""/></span>
     }
   }
 

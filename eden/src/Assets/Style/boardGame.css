@@ -17,6 +17,14 @@
     filter: drop-shadow(0 0 0.75rem black);
 }
 
+#character {
+    z-index: 2;
+}
+
+.fleur {
+    z-index: 3;
+}
+
 .paysageContainer {
     position: relative;
 }
@@ -26,6 +34,9 @@
     left:0;
 }
 
+.giletjaune {
+    z-index: 3;
+}
 
 #triviaContainer {
     max-width: 550px;
@@ -36,11 +47,11 @@
     position: absolute;
     top: 85%;
     width:100%;
+    z-index: 4;
 }
 
 .menu-choice button {
     width: 100px;
-    z-index: 10000;
 }
 
 .menu-choice button:hover {
