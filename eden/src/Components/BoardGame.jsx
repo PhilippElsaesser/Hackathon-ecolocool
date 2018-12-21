@@ -106,9 +106,9 @@ class BoardGame extends Component {
 
   recapText = (score) => (
     <div className="text-center">
-      <p>Merci de sauver la planete!</p>
-      <p>ton score pour cette semaine:</p>
-      <h3 className="text-success score">{Math.floor((score / 7) * 100)}%</h3>
+      <p>Il n'est jamais trop tard pour changer ses bonnes habitudes ! Poursuis tes efforts !</p>
+      <p>Voici ton score pour cette semaine :</p>
+      <h3 className="text-info score">{Math.floor((score / 7) * 100)}%</h3>
     </div>
   )
 
@@ -123,7 +123,7 @@ class BoardGame extends Component {
               <div className="boardgame text-center">
                 {this.props.open ? <Popover placement="top" id="popover-basic">
                   {this.props.popUpContent[this.props.day].question} 
-                </Popover> : null};
+                </Popover> : null}
                 {!this.props.open && this.props.day === 6 ? <Popover placement="top" id="popover-basic">
                   {this.recapText(this.props.paysageCounter)}
                 </Popover> : null}
