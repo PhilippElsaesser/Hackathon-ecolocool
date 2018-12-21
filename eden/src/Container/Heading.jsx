@@ -10,6 +10,7 @@ class Heading extends Component {
     return (
       <div>
             <NavLink to="/"><h1 className="backbutton"><FaChevronLeft /></h1></NavLink>
+            <h1>Eden</h1>
       </div>
     )
   }
