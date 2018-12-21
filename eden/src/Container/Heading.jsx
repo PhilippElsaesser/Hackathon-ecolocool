@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { Container, Row, Col } from 'reactstrap';
+import { Container } from 'reactstrap';
 import { FaChevronLeft } from 'react-icons/fa';
-import { NavLink, Link } from 'react-router-dom';
-import '../Assets/Style/Heading.css'
-import { nextDay, resetDay } from '../Actions/Actions'
+import { NavLink } from 'react-router-dom';
+import '../Assets/Style/Heading.css';
 
 class Heading extends Component {
   render() {
