@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { connect } from 'react-redux'
+import '../Assets/Style/IntroText.css';
 
 class ButtonYesNo extends Component {
     render() {
         return (
             <div>
-                <NavLink to="/boardgame"><button>Oui</button></NavLink>
+                <NavLink to="/boardgame"><button className="buttonContinue">C'est parti !</button></NavLink>
             </div>
         );
     }

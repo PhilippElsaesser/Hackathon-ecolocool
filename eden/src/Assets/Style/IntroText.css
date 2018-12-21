@@ -1,9 +1,57 @@
+.homePageContainer {
+  height:100vh;
+}
+
+.homePageContainer p {
+  margin: 3.1em;
+  font-size: 1.1em;
+}
+
+.homePageContainer h1 {
+  margin:0 auto !important;
+  padding: 0px !important;
+}
+
+.homePageContainer h2 {
+  margin-top:2em;
+}
+
+.areYouReady {
+  
+}
+
 .infoText {
   height: auto;
   width: 100%;
 }
 
+.infoText ul {
+  list-style-type: none;
+}
+
 .leadText {
-  font-size:1.5em;
+  font-size: 1.5em;
   line-height: 1.1em;
+}
+
+.container {
+  padding: 20px !important;
+}
+
+.areYouReady {
+  font-size: 2em;
+}
+
+.buttonContinue {
+  width: 60vw;
+  height: 5vh;
+  font-size: 1.5em;
+}
+
+.logoContainer {
+  width:80vw;
+}
+
+.textAlexContainer{
+
 }
