@@ -9,6 +9,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { Popover } from "react-bootstrap";
 import { isOpen } from '../Actions/Actions'
+import character from '../Assets/Images/character.png';
 import arbre1 from '../Assets/Images/paysage1.png';
 import arbre2 from '../Assets/Images/paysage2.png';
 import arbre3 from '../Assets/Images/paysage3.png';
@@ -70,6 +71,7 @@ class BoardGame extends Component {
                 </Popover> : null };
                 <div className="paysageContainer">
                   <img id="board" src={background} className="img-fluid" alt="" />
+                  <img id="character" src={character} className="paysage img-fluid" alt=""/>
                   {this.displayPaysage1()}
                   {this.displayPaysage2()}
                   {this.displayPaysage3()}
