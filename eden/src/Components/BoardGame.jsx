@@ -26,7 +26,7 @@ class BoardGame extends Component {
   }
   displayPaysage2=()=>{
     if(this.props.paysageCounter>=2){
-      return <span className="animated bounceInRight paysage "><img src={arbre2} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated fadeInLeft paysage "><img src={arbre2} className="arbre img-fluid" alt=""/></span>
     }
   }
   displayPaysage3=()=>{
@@ -36,7 +36,7 @@ class BoardGame extends Component {
   }
   displayPaysage4=()=>{
     if(this.props.paysageCounter>=4){
-      return <span className="animated bounceInLeft paysage"><img src={arbre4} className="arbre img-fluid" alt=""/></span>
+      return <span className="animated bounceInRight paysage"><img src={arbre4} className="arbre img-fluid" alt=""/></span>
     }
   }
   displayPaysage5=()=>{
