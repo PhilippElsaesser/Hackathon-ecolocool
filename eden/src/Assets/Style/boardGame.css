@@ -55,9 +55,10 @@ h1 {
     position: absolute;
     left: 15%;
     top: 15%;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     width:75vw;
     max-width: 400px;
+    font-weight: bold;
     /* background-color:rgba(0, 0, 0, 0.5); */
     padding: 10px;
     border-radius: 10px;
