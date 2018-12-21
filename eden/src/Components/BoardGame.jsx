@@ -15,23 +15,18 @@ class BoardGame extends Component {
     return (
       <div className="App">
         <Heading />
-        <Container>
+        <Container id="gameCanvas">
           <Row>
             <Col sm="12">
               <div className="boardgame">
                 {this.props.open ? <Popover
-                  className="popo"
-                  id="popover-basic"
                   placement="top"
-                // title="Popover bottom"
                 >
                   {this.props.popUpContent[this.props.day].question}
                 </Popover>
                   :
                   null
-                }
-
-                ;
+                };
                 <img src={background} className="img-fluid" alt="" />
                 <div className="menu-choice">
                   <ButtonQuestions />

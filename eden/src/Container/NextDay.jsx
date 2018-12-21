@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { nextDay, resetDay, isOpen } from '../Actions/Actions'
+import { Button } from 'reactstrap';
 
 class NextDay extends Component {
     goToNextDay = () => {
@@ -13,8 +14,8 @@ class NextDay extends Component {
     render() {
         return (
             <div>
-                {(this.props.day < this.props.popUpContent.length - 1)
-                    ? <div><button onClick={this.goToNextDay}>JOUR SUIVANT</button></div> : null}
+                {(this.props.day < this.props.popUpContent.length-1)
+                    ? <div><Button onClick={this.goToNextDay}>JOUR SUIVANT</Button></div> : null}
             </div>
         );
     }
