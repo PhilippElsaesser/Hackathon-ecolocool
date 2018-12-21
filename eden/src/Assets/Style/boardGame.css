@@ -7,37 +7,126 @@
     width:100%;
 }
 
+#gameCanvas {
+    max-width: 550px;
+    padding:10px;
+    z-index:0;
+}
+
+#board{
+    border: 5px solid rgb(216, 215, 215);
+}
+
+#character {
+    z-index: 2;
+}
+
+.fleur {
+    z-index: 3;
+}
+
+.paysageContainer {
+    position: relative;
+}
+
+.paysage {
+    position: absolute;
+    left:0;
+}
+
+.giletjaune {
+    z-index: 3;
+}
+
+#triviaContainer {
+    max-width: 550px;
+    padding:10px;
+}
+
 .menu-choice {
-    width:100%;
-    display:block;
-    background-color: rgb(94, 134, 221);
-    padding:4%;
-    margin:auto;
+    position: absolute;
+    top: 85%;
+    width:90%;
+    z-index: 4;
+}
+
+.menu-choice button {
+    width: 70px;
+    font-weight:700;
+}
+
+.menu-choice button:hover {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.24), 0 3px 5px 0 rgba(0,0,0,0.19);
 }
 
 h1 {
-    font-size:3em;
+    font-size:5em;
     color:rgb(94, 134, 221);
     font-family: 'Lobster Two', cursive;
     font-weight:900;
     text-shadow: 2px 2px 0px rgb(242, 244, 248);
-    padding-top:10%;
+    padding-top:2%;
+    margin:auto;
+}
+
+.score {
+    font-size: 2em;
+    font-weight: bold;
 }
 
 /* pas touche, modifs des paragraphes */
 .p-app {
-    font-size:0.9em;
-    line-height: 1.1em;
-    padding-left:5%;
-    padding-right:5%;
+    font-size:1.5em;
+    line-height: 1.2em;
+    padding:5%;
+    background-color:rgb(229, 231, 243);
+    text-align:justify;
+    margin-top:-5%;
+    
 }
 
 .button-questions {
-    margin:2%;
+    margin:5%;
+    font-size:1.5em;
 }
+
+/* bloc des deux boutons */
+.bloc-button {
+    display:block;
+    width:80%;
+    margin:auto;
+}
+
+/* .button-home {
+
+} */
+
+/* bouton next day */
+.next-day {
+    font-size:1.3em;
+    font-weight:700;
+    background-color: rgb(99, 160, 97);
+    margin:auto;
+    padding:5px;
+    margin-bottom:1%;
+}
+
+/* 
+===================================
+           BUBBLE / POPOVER
+=================================== */
 .popover {
     position: absolute;
-    top:13vh;
-    left: 13vw;
-    font-size: 1.2rem;
+    left: 11%;
+    top: 15%;
+    font-size: 1.5em;
+    width:75vw;
+    max-width: 400px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 10000;
+    box-shadow:none;
+    font-family: 'Comfortaa', cursive;
+    line-height:1.1em;
 }

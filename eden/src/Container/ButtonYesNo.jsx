@@ -1,14 +1,34 @@
 import React, { Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { connect } from 'react-redux'
+import { Button } from 'reactstrap';
+import '../Assets/Style/IntroText.css';
 
 class ButtonYesNo extends Component {
     render() {
         return (
             <div>
-                <NavLink to="/boardgame"><button>Oui</button></NavLink>
+                <NavLink to="/boardgame"><Button className="button-home">C'est parti !</Button></NavLink>
             </div>
         );
     }
 }
 
-export default ButtonYesNo;
+const mapDispatchToProps = dispatch => {
+    return {
+
+    }
+}
+
+const mapStateToProps = state => ({
+
+})
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(ButtonYesNo);
+
+
+
+

@@ -1,18 +1,15 @@
 .App {
   text-align: center;
-  background-color:rgb(214, 214, 214);
-  height:100vh;
+  background-color:white;
+  /* height:100vh; */
+  font-family: 'Comfortaa', cursive !important;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body {
+  width:94%;
+  margin:auto;
 }

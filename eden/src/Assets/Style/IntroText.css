@@ -1,0 +1,45 @@
+h3 {
+  font-size:3em;
+  color:rgb(94, 134, 221);
+  font-family: 'Lobster Two', cursive;
+  font-weight:900;
+  text-shadow: 2px 2px 0px rgb(242, 244, 248);
+}
+
+.love {
+  color:rgb(94, 134, 221);
+  font-weight:900;
+  display:inline-block;
+}
+
+.button-home {
+  width: 60vw;
+  height: 5vh;
+  font-size: 1.5em;
+  margin-bottom:5%;
+  background-color: rgb(81, 142, 221);
+  border:none;
+  font-weight:900;
+}
+
+.button-home:hover {
+  background-color: rgb(85, 141, 32);
+}
+
+.logoContainer {
+  width:60%;
+}
+
+h2 {
+  font-size:3em;
+  color:rgb(94, 134, 221);
+  font-family: 'Lobster Two', cursive;
+  font-weight:900;
+  text-shadow: 2px 2px 0px rgb(242, 244, 248);
+  padding-top:2%;
+  margin:auto;
+}
+
+.intro-txt {
+  font-size:1.3em;
+}
