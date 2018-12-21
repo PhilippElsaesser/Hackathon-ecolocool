@@ -63,6 +63,7 @@ class BoardGame extends Component {
         <Container id="gameCanvas">
           <Row>
             <Col sm="12">
+              <h2 id="pointsDeVie">{this.props.fleurCounter + "PV"}</h2>
               <div className="boardgame text-center">
                 {this.props.open ? <Popover placement="top" id="popover-basic">
                   {this.props.popUpContent[this.props.day].question}
