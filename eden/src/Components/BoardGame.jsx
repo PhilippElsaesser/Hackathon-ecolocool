@@ -19,10 +19,10 @@ class BoardGame extends Component {
           <Row>
             <Col sm="12">
               <div className="boardgame text-center">
-                <blockquote className="bubble"><h3>{this.props.popUpContent[this.props.day].question}</h3></blockquote>
-                {/* <Popover placement="top">
+                {/* <blockquote className="bubble"><h3>{this.props.popUpContent[this.props.day].question}</h3></blockquote> */}
+                <Popover placement="top" id="question">
                   {this.props.popUpContent[this.props.day].question}
-                </Popover> */}
+                </Popover>
                 <img src={background} className="img-fluid" alt="" />
               </div>
             </Col>
