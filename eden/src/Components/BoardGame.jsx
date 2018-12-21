@@ -79,7 +79,7 @@ class BoardGame extends Component {
                   {this.displayPaysage7()}
                 </div>
                 <div className="menu-choice">
-                  <ButtonQuestions />
+                  {this.props.open ? (<ButtonQuestions />) : null}
                 </div>
               </div>
             </Col>
