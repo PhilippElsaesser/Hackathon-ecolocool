@@ -46,12 +46,13 @@
 .menu-choice {
     position: absolute;
     top: 85%;
-    width:100%;
+    width:90%;
     z-index: 4;
 }
 
 .menu-choice button {
-    width: 100px;
+    width: 70px;
+    font-weight:700;
 }
 
 .menu-choice button:hover {
@@ -65,20 +66,35 @@ h1 {
     font-weight:900;
     text-shadow: 2px 2px 0px rgb(242, 244, 248);
     padding-top:2%;
+    margin:auto;
 }
 
 /* pas touche, modifs des paragraphes */
 .p-app {
-    font-size:1.8em;
-    line-height: 1.1em;
+    font-size:1.5em;
+    line-height: 1.2em;
     padding:5%;
-    background-color:rgb(230, 231, 233);
+    background-color:rgb(229, 231, 243);
     text-align:justify;
+    margin-top:-5%;
+    
 }
 
 .button-questions {
-    margin:2%;
+    margin:5%;
+    font-size:1.5em;
 }
+
+/* bloc des deux boutons */
+.bloc-button {
+    display:block;
+    width:80%;
+    margin:auto;
+}
+
+/* .button-home {
+
+} */
 
 /* bouton next day */
 .next-day {
@@ -96,14 +112,16 @@ h1 {
 =================================== */
 .popover {
     position: absolute;
-    left: 15%;
+    left: 11%;
     top: 15%;
     font-size: 1.5em;
     width:75vw;
     max-width: 400px;
     font-weight: bold;
-    /* background-color:rgba(0, 0, 0, 0.5); */
     padding: 10px;
     border-radius: 10px;
     z-index: 10000;
+    box-shadow:none;
+    font-family: 'Comfortaa', cursive;
+    line-height:1.1em;
 }
