@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { NavLink, Link } from 'react-router-dom';
-import Heading from '../Container/Heading'
 import ButtonYesNo from '../Container/ButtonYesNo';
 
 class HomePage extends Component {

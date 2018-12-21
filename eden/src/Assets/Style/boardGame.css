@@ -35,3 +35,15 @@ h1 {
 .button-questions {
     margin:2%;
 }
+
+/* bouton next day */
+.next-day {
+    font-size:0.7em;
+    margin:1%;
+}
+
+.next-day button {
+    background-color:rgb(199, 199, 199);
+    border:none;
+    color:rgb(94, 85, 85);
+}
