@@ -8,7 +8,7 @@ class HomePage extends Component {
         return (
             <div className="homePageContainer">
                 <IntroText />
-                <h1 className="areYouReady">Es-tu prêt à sauver la planète ?</h1>
+                <h3>Es-tu prêt à sauver la planète ?</h3>
                 <ButtonYesNo />
             </div>
         );

@@ -53,7 +53,7 @@ class ButtonQuestions extends Component {
     render() {
 
         return (
-            <div>
+            <div className="bloc-button">
                 <Button onClick={this.onClickYes} color="primary" className="button-questions" value="oui">OUI</Button>
                 <Button onClick={this.onClickNo} color="primary" className="button-questions" value="non">NON</Button>
             </div>

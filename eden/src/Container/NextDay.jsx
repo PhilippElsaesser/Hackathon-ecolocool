@@ -12,10 +12,11 @@ class NextDay extends Component {
         }
     }
     render() {
+        console.log(this.props.day)
         return (
             <div>
                 {(this.props.day < this.props.popUpContent.length-1)
-                    ? <div><Button onClick={this.goToNextDay}>JOUR SUIVANT</Button></div> : null}
+                    ? <div><Button className="next-day" onClick={this.goToNextDay}>JOUR SUIVANT</Button></div> : null}
             </div>
         );
     }

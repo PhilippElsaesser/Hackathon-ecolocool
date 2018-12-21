@@ -106,8 +106,7 @@ class BoardGame extends Component {
 
   recapText = (score) => (
     <div className="text-center">
-      <p>Il n'est jamais trop tard pour changer ses bonnes habitudes ! Poursuis tes efforts !</p>
-      <p>Voici ton score pour cette semaine :</p>
+      <p>Score de la semaine :</p>
       <h3 className="text-info score">{Math.floor((score / 7) * 100)}%</h3>
     </div>
   )
