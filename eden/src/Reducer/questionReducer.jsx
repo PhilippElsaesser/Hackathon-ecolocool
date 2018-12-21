@@ -16,13 +16,13 @@ const initialState = {
       id: 3,
       question: 'As-tu nettoyé ta boîte mail récemment ?',
       answer: 'oui',
-      trivia: "Le savais-tu ? Une entreprise de 100 personnes génère chaque année rien qu’avec son courrier électronique 13,6 tonnes d’équivalent CO2, soit l’équivalent de 14 allers-retours Paris et New York.(ADEME). Le nombre de mails envoyés par jour en France s'élève à 1,4 milliard (hors spam). Dans le monde ? 281 milliards (hors spam) ! Pour nettoyer ta boîte mail tu peux utiliser des outils comme <a href=\"Cleanfox.io\" target=\"blank\">Cleanfox.io</a> !"
+      trivia: "Le savais-tu ? Une entreprise de 100 personnes génère chaque année rien qu’avec son courrier électronique 13,6 tonnes d’équivalent CO2, soit l’équivalent de 14 allers-retours Paris et New York.(ADEME). Le nombre de mails envoyés par jour en France s'élève à 1,4 milliard (hors spam). Dans le monde ? 281 milliards (hors spam) ! Pour nettoyer ta boîte mail tu peux utiliser des outils comme <a href=\"https://cleanfox.io\" target=\"blank\">Cleanfox</a> !"
     },
     {
       id: 4,
       question: "As-tu utilisé google pour aller sur l'un de tes sites favoris cette semaine ?",
       answer: 'non', 
-      trivia: "Le savais-tu ? L’impact d’une requête web dépend du temps de recherche et du nombre de pages consultées. On divise par 4 les émissions de gaz à effet de serre en allant directement à l’adresse du site. <a href=\"https://www.lilo.org/fr/comment-epingler-mes-sites-favoris-mon-navigateur/\">Crée des favoris</a> dans ton navigateur pour tes sites internet préférés !"
+      trivia: "Le savais-tu ? L’impact d’une requête web dépend du temps de recherche et du nombre de pages consultées. On divise par 4 les émissions de gaz à effet de serre en allant directement à l’adresse du site. <a href=\"https://www.lilo.org/fr/comment-epingler-mes-sites-favoris-mon-navigateur/\" target=\"blank\">Crée des favoris</a> dans ton navigateur pour tes sites internet préférés !"
     },
     {
       id: 5,

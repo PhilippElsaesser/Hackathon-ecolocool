@@ -18,23 +18,18 @@ class BoardGame extends Component {
         <Container id="gameCanvas">
           <Row>
             <Col sm="12">
-              <div className="boardgame">
-                {this.props.open ? <Popover
-                  placement="top"
-                >
+              <div className="boardgame text-center">
+                {this.props.open ? <Popover placement="top" id="popover-basic">
                   {this.props.popUpContent[this.props.day].question}
-                </Popover>
-                  :
-                  null
-                };
+                </Popover> : null };
                 <img src={background} className="img-fluid" alt="" />
-                <div className="menu-choice">
-                  <ButtonQuestions />
-                </div>
               </div>
             </Col>
           </Row>
         </Container>
+        <div className="menu-choice">
+          <ButtonQuestions />
+        </div>
         <NextDay />
       </div>
     );
@@ -57,4 +52,3 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(BoardGame);
-

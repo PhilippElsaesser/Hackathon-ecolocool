@@ -7,16 +7,26 @@
     width:100%;
 }
 
+#gameCanvas {
+    max-width: 550px;
+    filter: drop-shadow(0 0 0.75rem black);
+    padding:10px;
+}
+
 .menu-choice {
     width:100%;
     display:block;
-    background-color: rgb(94, 134, 221);
     padding:4%;
     margin:auto;
+    box-shadow: 
+}
+
+.menu-choice button:hover {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.24), 0 3px 5px 0 rgba(0,0,0,0.19);
 }
 
 h1 {
-    font-size:3em;
+    font-size:5em;
     color:rgb(94, 134, 221);
     font-family: 'Lobster Two', cursive;
     font-weight:900;
@@ -33,17 +43,22 @@ h1 {
 }
 
 .button-questions {
-    margin:2%;
-}
-.popover {
-    position: absolute;
-    top:13vh;
-    left: 13vw;
-    font-size: 1.2rem;
+    margin:2vw;
 }
 
-#gameCanvas {
-    max-width: 550px;
-    filter: drop-shadow(0 0 0.75rem black);
-    padding:20px;
+/* 
+===================================
+           BUBBLE / POPOVER
+=================================== */
+.popover {
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    font-size: 1.5em;
+    width:75vw;
+    max-width: 400px;
+    font-weight: bold;
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    padding: 10px;
+    border-radius: 10px;
 }
