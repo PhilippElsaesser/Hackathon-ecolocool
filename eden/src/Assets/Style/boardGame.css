@@ -7,16 +7,48 @@
     width:100%;
 }
 
+#gameCanvas {
+    max-width: 550px;
+    padding:10px;
+    z-index:0;
+}
+
+#board{
+    filter: drop-shadow(0 0 0.75rem black);
+}
+
+.paysageContainer {
+    position: relative;
+}
+
+.paysage {
+    position: absolute;
+    left:0;
+}
+
+
+#triviaContainer {
+    max-width: 550px;
+    padding:10px;
+}
+
 .menu-choice {
+    position: absolute;
+    top: 85%;
     width:100%;
-    display:block;
-    background-color: rgb(94, 134, 221);
-    padding:4%;
-    margin:auto;
+}
+
+.menu-choice button {
+    width: 100px;
+    z-index: 10000;
+}
+
+.menu-choice button:hover {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.24), 0 3px 5px 0 rgba(0,0,0,0.19);
 }
 
 h1 {
-    font-size:3em;
+    font-size:5em;
     color:rgb(94, 134, 221);
     font-family: 'Lobster Two', cursive;
     font-weight:900;
@@ -26,7 +58,7 @@ h1 {
 
 /* pas touche, modifs des paragraphes */
 .p-app {
-    font-size:0.9em;
+    font-size:1.5em;
     line-height: 1.1em;
     padding-left:5%;
     padding-right:5%;
@@ -46,4 +78,38 @@ h1 {
     background-color:rgb(199, 199, 199);
     border:none;
     color:rgb(94, 85, 85);
+    margin:2vw;
+}
+
+/* 
+===================================
+           BUBBLE / POPOVER
+=================================== */
+.popover {
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    font-size: 1.5em;
+    width:75vw;
+    max-width: 400px;
+    font-weight: bold;
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 10000;
+}
+
+/* 
+===================================
+          POINTS DE VIE
+=================================== */
+#pointsDeVie {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 30px;
+    font-size: 4rem;
+    color: crimson;
+    border: 4px solid crimson;
+    padding: 10px;
 }
