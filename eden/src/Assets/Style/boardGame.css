@@ -85,3 +85,18 @@ h1 {
     border-radius: 10px;
     z-index: 10000;
 }
+
+/* 
+===================================
+          POINTS DE VIE
+=================================== */
+#pointsDeVie {
+    position: absolute;
+    z-index: 1;
+    top: 30px;
+    left: 30px;
+    font-size: 4rem;
+    color: crimson;
+    border: 4px solid crimson;
+    padding: 10px;
+}
