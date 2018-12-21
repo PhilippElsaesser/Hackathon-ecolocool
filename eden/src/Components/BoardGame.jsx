@@ -17,18 +17,19 @@ class BoardGame extends Component {
         <Container id="gameCanvas">
           <Row>
             <Col sm="12">
-              <div className="boardgame">
-                  <Popover placement="top">
-                    {this.props.popUpContent[this.props.day].question}
-                  </Popover>
+              <div className="boardgame text-center">
+                <div id="question"><h3>{this.props.popUpContent[this.props.day].question}</h3></div>
+                {/* <Popover placement="top">
+                  {this.props.popUpContent[this.props.day].question}
+                </Popover> */}
                 <img src={background} className="img-fluid" alt="" />
-                <div className="menu-choice">
-                  <ButtonQuestions />
-                </div>
               </div>
             </Col>
           </Row>
         </Container>
+        <div className="menu-choice">
+          <ButtonQuestions />
+        </div>
         <NextDay />
       </div>
     );
