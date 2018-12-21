@@ -104,7 +104,15 @@ class BoardGame extends Component {
     }
   }
 
-  
+  recapText = (score) => (
+    <div className="text-center">
+      <p>Merci de sauver la planete!</p>
+      <p>ton score pour cette semaine:</p>
+      <h3 className="text-success score">{Math.floor((score / 7) * 100)}%</h3>
+    </div>
+  )
+
+
   render() {
     return (
       <div>
@@ -114,11 +122,14 @@ class BoardGame extends Component {
             <Col sm="12">
               <div className="boardgame text-center">
                 {this.props.open ? <Popover placement="top" id="popover-basic">
-                  {this.props.popUpContent[this.props.day].question}
-                </Popover> : null }
+                  {this.props.popUpContent[this.props.day].question} 
+                </Popover> : null};
+                {!this.props.open && this.props.day === 6 ? <Popover placement="top" id="popover-basic">
+                  {this.recapText(this.props.paysageCounter)}
+                </Popover> : null}
                 <div className="paysageContainer">
                   <img id="board" src={background} className="img-fluid" alt="" />
-                  <img id="character" src={character} className="paysage img-fluid" alt=""/>
+                  <img id="character" src={character} className="paysage img-fluid" alt="" />
                   {this.displayPaysage1()}
                   {this.displayPaysage2()}
                   {this.displayPaysage3()}
@@ -143,7 +154,7 @@ class BoardGame extends Component {
           </Row>
         </Container>
         <Container id="triviaContainer">
-          <div className="p-app" dangerouslySetInnerHTML={{__html: this.props.popUpContent[this.props.day].trivia}}></div>
+          <div className="p-app" dangerouslySetInnerHTML={{ __html: this.props.popUpContent[this.props.day].trivia }}></div>
         </Container>
         <NextDay />
       </div>
