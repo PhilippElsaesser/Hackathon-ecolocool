@@ -17,6 +17,14 @@
     border: 5px solid rgb(216, 215, 215);
 }
 
+#character {
+    z-index: 2;
+}
+
+.fleur {
+    z-index: 3;
+}
+
 .paysageContainer {
     position: relative;
 }
@@ -26,6 +34,9 @@
     left:0;
 }
 
+.giletjaune {
+    z-index: 3;
+}
 
 #triviaContainer {
     max-width: 550px;
@@ -36,11 +47,11 @@
     position: absolute;
     top: 85%;
     width:100%;
+    z-index: 4;
 }
 
 .menu-choice button {
     width: 100px;
-    z-index: 10000;
 }
 
 .menu-choice button:hover {
@@ -95,19 +106,4 @@ h1 {
     padding: 10px;
     border-radius: 10px;
     z-index: 10000;
-}
-
-/* 
-===================================
-          POINTS DE VIE
-=================================== */
-#pointsDeVie {
-    position: absolute;
-    z-index: 1;
-    top: 30px;
-    left: 30px;
-    font-size: 4rem;
-    color: crimson;
-    border: 4px solid crimson;
-    padding: 10px;
 }
