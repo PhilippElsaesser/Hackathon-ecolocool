@@ -11,9 +11,6 @@ class Heading extends Component {
       <div>
             <NavLink to="/"><h1 className="backbutton"><FaChevronLeft /></h1></NavLink>
             <h1>Eden</h1>
-            <Container>
-              <div className="p-app" dangerouslySetInnerHTML={{__html: this.props.popUpContent[this.props.day].trivia}}></div>
-            </Container>
       </div>
     )
   }
@@ -26,8 +23,7 @@ const mapDispatchToProps = dispatch => {
 }
 
 const mapStateToProps = state => ({
-  popUpContent: state.questionReducer.popUpContent,
-  day: state.dayReducer.day,
+  
 })
 
 export default connect(

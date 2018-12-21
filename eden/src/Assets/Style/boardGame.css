@@ -13,12 +13,19 @@
     padding:10px;
 }
 
+#triviaContainer {
+    max-width: 550px;
+    padding:10px;
+}
+
 .menu-choice {
+    position: absolute;
+    top: 85%;
     width:100%;
-    display:block;
-    padding:4%;
-    margin:auto;
-    box-shadow: 
+}
+
+.menu-choice button {
+    width: 100px;
 }
 
 .menu-choice button:hover {

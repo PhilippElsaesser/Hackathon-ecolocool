@@ -23,13 +23,17 @@ class BoardGame extends Component {
                   {this.props.popUpContent[this.props.day].question}
                 </Popover> : null };
                 <img src={background} className="img-fluid" alt="" />
+                <div className="menu-choice">
+                  <ButtonQuestions />
+                </div>
               </div>
             </Col>
           </Row>
         </Container>
-        <div className="menu-choice">
-          <ButtonQuestions />
-        </div>
+        <Container id="triviaContainer">
+          <div className="p-app" dangerouslySetInnerHTML={{__html: this.props.popUpContent[this.props.day].trivia}}></div>
+        </Container>
+        
         <NextDay />
       </div>
     );
